@@ -6,11 +6,31 @@ output.
 
 It is useful for quick text manipulation on the search output.
 
+## Installation
+
+### Using vim-plug
+
+```vim
+Plug 'piotr1215/yanksearch.nvim'
+```
+
+### Using packer.nvim
+
+```lua
+use 'piotr1215/yanksearch.nvim'
+```
+
 ## Usage
 
-## Format
+To use the plugin, simply type `:YankMatchingLines` after performing a search.
 
-Format use `stylua` and provide `.stylua.toml`.
+### Dependencies
+
+Neovim 0.5 or higher
+
+## Configuration
+
+No configuration is needed as of now.
 
 ## Test
 
@@ -23,9 +43,5 @@ Create test case in test folder file rule is `foo_spec.lua` with `_spec` more us
 ## Ci
 
 Ci support auto generate doc from README and integration test and lint check by `stylua`.
-
-## More
-
-Other usage you can look at my plugins
 
 ## License MIT
