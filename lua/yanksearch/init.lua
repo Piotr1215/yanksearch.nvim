@@ -43,7 +43,7 @@ end
 M.config = {
   lines_above = 0,
   lines_below = 0,
-  lines_around = 0
+  lines_around = 0,
 }
 
 function M.setup(user_config)
