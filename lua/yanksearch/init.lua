@@ -17,7 +17,7 @@ function M.yank_matching_lines()
       vim.cmd('0put +')
       vim.bo.filetype = original_filetype
     else
-      print("No matches found")
+      print('No matches found')
     end
   end
 end
