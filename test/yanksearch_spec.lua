@@ -1,4 +1,5 @@
 local ysearch = require('yanksearch')
+
 local function stringToAscii(str)
   local ascii = {}
   for i = 1, #str do
