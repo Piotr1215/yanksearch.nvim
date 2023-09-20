@@ -1,6 +1,5 @@
 local M = {}
 
-
 function M.yank_matching_lines()
   local search_pattern = vim.fn.getreg('/')
   if search_pattern ~= '' then
