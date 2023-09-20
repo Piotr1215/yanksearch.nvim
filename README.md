@@ -30,18 +30,34 @@ Neovim 0.5 or higher
 
 ## Configuration
 
-No configuration is needed as of now.
+As of the latest update, the plugin supports configuration options. You can specify the number of lines above, below, or around the matching line to be yanked as well.
+
+Here's an example:
+
+```lua
+require('yanksearch').setup({
+    lines_above = 1,
+    lines_below = 1,
+    lines_around = 0,
+})
+```
+
+The plugin defaults to:
+
+```lua
+require('yanksearch').setup({
+    lines_above = 0,
+    lines_below = 0,
+    lines_around = 0,
+})
+```
 
 ## Test
 
-Use vusted for test install by using `luarocks --lua-version=5.1 install vusted` then run `vusted test`
-for your test cases.
-
-Create test case in test folder file rule is `foo_spec.lua` with `_spec` more usage please check
-[busted usage](https://lunarmodules.github.io/busted/)
+Tests are run with `vusted test`.
 
 ## Ci
 
-Ci support auto generate doc from README and integration test and lint check by `stylua`.
+Ci auto generates neovim help doc from README, so it's possible to run `h yanksearch`
 
 ## License MIT
