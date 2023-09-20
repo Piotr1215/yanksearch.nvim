@@ -22,5 +22,4 @@ function M.yank_matching_lines()
   end
 end
 
-vim.api.nvim_set_keymap('n', '<Leader>ya', ':lua _G.yank_matching_lines()<CR>', { noremap = true, silent = true })
 return M
