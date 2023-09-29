@@ -33,6 +33,11 @@ function M.yank_matching_lines()
       vim.cmd('new')
       vim.cmd('0put +')
       vim.bo.filetype = original_filetype
+      -- Make the buffer a scratch buffer
+      vim.cmd("setlocal buftype=nofile")
+      vim.cmd("setlocal bufhidden=wipe")
+      -- Map 'q' to close the buffer in this window
+      vim.api.nvim_buf_set_keymap(0, 'n', 'q', ':q!<CR>', { noremap = true, silent = true })
     else
       print('No matches found')
     end
