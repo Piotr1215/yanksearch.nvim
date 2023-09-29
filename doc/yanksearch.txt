@@ -1,4 +1,4 @@
-*yanksearch.txt*         For NVIM v0.8.0        Last change: 2023 September 20
+*yanksearch.txt*         For NVIM v0.8.0        Last change: 2023 September 29
 
 ==============================================================================
 Table of Contents                               *yanksearch-table-of-contents*
